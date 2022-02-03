@@ -3,7 +3,7 @@ import axios from 'axios';
 import Book from './components/Book';
 import { useEffect, useState } from 'react';
 
-const API_URL = "http://localhost:3000/api/v1/books";
+const API_URL = "https://react-app-bookstore-kotcherga.herokuapp.com//api/v1/books";
 
 function getAPIData() {
   return axios.get(API_URL).then((res) => res.data)
